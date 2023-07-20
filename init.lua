@@ -1,0 +1,11 @@
+require('masonconfig')
+require('completionconfig')
+require('telescopeconfig')
+require('treesitterconfig')
+require('lualineconfig')
+require('tnavigatorconfig')
+require('blineconfig')
+require('treeconfig')
+require('config')
+require('packer-plugins')
+
