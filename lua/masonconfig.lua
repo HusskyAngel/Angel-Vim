@@ -118,4 +118,7 @@ lsp_defaults.capabilities = vim.tbl_deep_extend(
 ) 
 
 
+lspconfig.lua_ls.setup({})
+lspconfig.pyright.setup({})
+lspconfig.gopls.setup({})
 
