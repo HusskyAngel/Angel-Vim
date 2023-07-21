@@ -40,6 +40,8 @@ return require('packer').startup(function()
       requires = { {'nvim-lua/plenary.nvim'} }
     }
 
+   -- buffer behavior with tabs 
+   use 'tiagovla/scope.nvim'
    --completation 
    use 'neovim/nvim-lspconfig'
    use 'hrsh7th/cmp-nvim-lsp'

@@ -73,5 +73,6 @@ vim.api.nvim_set_keymap('n', '<leader>r', ':%s//', { noremap = true, silent = tr
 
 --buffer atachments
 vim.api.nvim_set_keymap('n', '<leader>bq', ':bd<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>bp', ':BufferLinePick<CR>', { noremap = true, silent = true })
 
 

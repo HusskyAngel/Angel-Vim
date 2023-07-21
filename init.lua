@@ -1,3 +1,4 @@
+require('scopeconfig')
 require('masonconfig')
 require('completionconfig')
 require('telescopeconfig')
