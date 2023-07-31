@@ -4,7 +4,8 @@ return require('packer').startup(function()
 
   --colorscheme
   use 'gruvbox-community/gruvbox'
-
+  use { "catppuccin/nvim", as = "catppuccin" }
+  use 'rebelot/kanagawa.nvim'
   --light speed
   use 'ggandor/lightspeed.nvim'
 

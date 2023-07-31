@@ -122,7 +122,20 @@ lsp_defaults.capabilities = vim.tbl_deep_extend(
 lspconfig.lua_ls.setup({})
 lspconfig.pyright.setup({})
 lspconfig.gopls.setup({})
-
+lspconfig.clangd.setup({})
+lspconfig.bashls.setup({})
+lspconfig.cmake.setup({})
+lspconfig.cssls.setup({})
+lspconfig.docker_compose_language_service.setup({})
+lspconfig.dockerls.setup({})
+lspconfig.dotls.setup({})
+lspconfig.html.setup({})
+lspconfig.rust_analyzer.setup({})
+lspconfig.sqlls.setup({})
+lspconfig.volar.setup({})
+lspconfig.tsserver.setup({}) 
+lspconfig.tailwindcss.setup({})
+lspconfig.yamlls.setup({})
 
 
 --------- lsp config 
