@@ -16,6 +16,9 @@ return require('packer').startup(function()
   -- bufferline 
   use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
   
+  --close nvim tree when close a buffer  
+  use 'famiu/bufdelete.nvim'
+
   --tmux navigator
   use { "alexghergh/nvim-tmux-navigation" }
 

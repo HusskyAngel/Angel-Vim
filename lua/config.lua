@@ -72,7 +72,7 @@ vim.api.nvim_set_keymap('n', '<leader>c', ':!', { noremap = true, silent = true 
 vim.api.nvim_set_keymap('n', '<leader>r', ':%s//', { noremap = true, silent = true })
 
 --buffer atachments
-vim.api.nvim_set_keymap('n', '<leader>bq', ':bd<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>bq', ':Bdelete<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>bp', ':BufferLinePick<CR>', { noremap = true, silent = true })
 
 --nvim tree
