@@ -119,8 +119,18 @@ lsp_defaults.capabilities = vim.tbl_deep_extend(
 
 
 -------- language servers ---------------------
-lspconfig.lua_ls.setup({})
-lspconfig.pyright.setup({})
+local signature_setup = {
+  on_attach = function(client, bufnr)
+    require "lsp_signature".on_attach({
+      bind = true, -- This is mandatory, otherwise border config won't get registered.
+      handler_opts = {
+        border = "rounded"
+      }
+    }, bufnr)
+  end,
+}
+lspconfig.lua_ls.setup(signature_setup)
+lspconfig.pyright.setup(signature_setup)
 lspconfig.gopls.setup({})
 lspconfig.clangd.setup({})
 lspconfig.bashls.setup({})

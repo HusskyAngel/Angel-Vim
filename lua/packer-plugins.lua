@@ -53,6 +53,9 @@ return require('packer').startup(function()
    use 'hrsh7th/cmp-path'
    use 'hrsh7th/cmp-cmdline'
    use 'hrsh7th/nvim-cmp'
+
+   --function arguments 
+   use 'ray-x/lsp_signature.nvim'
    --mason
    use {
       "williamboman/mason.nvim",

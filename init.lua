@@ -1,3 +1,4 @@
+require('lspsignature')
 require('scopeconfig')
 require('masonconfig')
 require('completionconfig')
