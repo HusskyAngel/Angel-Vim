@@ -36,7 +36,6 @@ return require('packer').startup(function()
             ts_update()
         end,
    }
-
    --telescope
    use {
       'nvim-telescope/telescope.nvim', tag = '0.1.2',
@@ -53,6 +52,17 @@ return require('packer').startup(function()
    use 'hrsh7th/cmp-path'
    use 'hrsh7th/cmp-cmdline'
    use 'hrsh7th/nvim-cmp'
+
+   use {
+    "Exafunction/codeium.nvim",
+    requires = {
+        "nvim-lua/plenary.nvim",
+        "hrsh7th/nvim-cmp",
+    }}
+
+   --jsx
+   use'jose-elias-alvarez/null-ls.nvim'
+   use 'MunifTanjim/eslint.nvim'
 
    --function arguments 
    use 'ray-x/lsp_signature.nvim'

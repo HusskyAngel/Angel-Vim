@@ -18,6 +18,7 @@ cmp.setup({
     {name = 'nvim_lsp', keyword_length = 1},
     {name = 'buffer', keyword_length = 3},
     {name = 'luasnip', keyword_length = 2},
+    {name = 'codeium', keyword_length=4 }
   },
   window = {
     documentation = cmp.config.window.bordered()
@@ -30,6 +31,7 @@ cmp.setup({
         luasnip = '⋗',
         buffer = 'Ω',
         path = '🖫',
+        codeium='θ',
       }
 
       item.menu = menu_icon[entry.source.name]
